@@ -1,0 +1,811 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-font: "David Libre", serif;
+  --color: #101a24;
+  --ashen: #5c6574;
+  --orange: #ea6d27;
+}
+.logo img {
+  width: 198px;
+  height: 55px;
+  position: absolute;
+  left: 10%;
+  top: 50px;
+}
+
+nav {
+  position: relative;
+  padding: 10px 20px;
+  display: -moz-stack;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  left: 35%;
+  top: 80px;
+}
+
+/* nav ul li {
+  position: relative;
+} */
+
+nav ul li a {
+  text-decoration: none;
+  color: #101a24;
+  padding: 20px 25px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+.moving-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 110px;
+  width: 0;
+  height: 4px;
+  background-color: #f39c12;
+  transition: all 0.3s ease;
+}
+
+.Book-a-table {
+  position: absolute;
+  left: 80%;
+  top: 65px;
+  padding: 15px;
+  color: #fff;
+  background-color: #ea6d27;
+  width: 167px;
+  height: 64px;
+  border-radius: 18px 0px 20px 0px;
+  border: solid 1px #ea6d27;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+.side-lines1 {
+  position: absolute;
+  bottom: 150px;
+  left: -40px;
+}
+
+.side-lines2 {
+  position: absolute;
+  bottom: 150px;
+}
+.side-lines3 {
+  position: absolute;
+  bottom: 150px;
+  left: 5%;
+}
+.img-foods-deliclose {
+  position: absolute;
+  top: 250px;
+  left: 10%;
+}
+.img-foods-deliclose img {
+  width: 104.64px;
+  height: 104px;
+}
+.shadow-of-a-tree {
+  position: absolute;
+  left: 40%;
+  top: 150px;
+}
+.shadow-of-a-tree img {
+  width: 448px;
+  height: 191.94px;
+}
+.round-leaf-shadow {
+  position: absolute;
+  left: 75%;
+  top: 150px;
+}
+.round-leaf-shadow img {
+  width: 315.27px;
+  height: 299.11px;
+}
+.mask-group img {
+  width: 516px;
+  height: 712px;
+}
+.mask-group {
+  position: absolute;
+  left: 52%;
+  top: 250px;
+}
+.vector img {
+  position: absolute;
+  left: 81%;
+  top: 550px;
+}
+.vector img {
+  width: 252.43px;
+  height: 342.68px;
+}
+.dish {
+  position: absolute;
+  left: 40%;
+  top: 590px;
+}
+.dish img {
+  width: 364px;
+  height: 364px;
+}
+.food-intro h1 {
+  width: 311px;
+  height: 148px;
+  position: absolute;
+  left: 18%;
+  top: 350px;
+  font-family: var(--main-font);
+  font-size: 45px;
+  font-weight: 500;
+}
+.paragraph-content {
+  width: 376px;
+  height: 115px;
+  color: #5c6574;
+  position: absolute;
+  top: 500px;
+  left: 18%;
+}
+.menu {
+  position: absolute;
+  top: 650px;
+  left: 18%;
+  width: 120px;
+  height: 54px;
+  background-color: #101a24;
+  color: #fff;
+  font-family: var(--main-font);
+  border: solid 1px #101a24;
+  border-radius: 18px 0px 20px 0px;
+  cursor: pointer;
+}
+.book-a-table {
+  position: absolute;
+  top: 650px;
+  left: 30%;
+  width: 120px;
+  height: 54px;
+  background-color: #ea6d27;
+  color: #fff;
+  font-family: var(--main-font);
+  border: solid 1px #ea6d27;
+  border-radius: 18px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  top: 780px;
+  left: 20%;
+}
+
+.icon a {
+  text-decoration: none;
+  font-size: 2rem; 
+  color: #000000; 
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon a:hover {
+  color: #00acee;
+  transform: scale(1.2);
+}
+
+.icon a:nth-child(1):hover {
+  color: #4267b2;
+}
+
+.icon a:nth-child(2):hover {
+  color: #dc1456; 
+}
+
+.icon a:nth-child(3):hover {
+  color: #1da1f2; 
+}
+.container-menu {
+  position: absolute;
+  top: 1200px;
+  background-color: #f3eeee;
+  width: 100%;
+  height: 2000px;
+}
+.img-group img {
+  width: 224.2px;
+  height: 212.7px;
+}
+.img-group {
+  position: absolute;
+  left: 10%;
+}
+.img-paper {
+  width: 180.6px;
+  height: 257.39px;
+  position: absolute;
+  left: 60%;
+}
+.Special {
+  position: absolute;
+  left: 30%;
+  bottom: 1850px;
+  color: #101a24;
+  font-family: var(--main-font);
+  font-size: 50px;
+}
+.Menu-Description {
+  width: 376px;
+  height: 65px;
+  position: absolute;
+  left: 33%;
+  top: 200px;
+  color: #5c6574;
+  line-height: 25px;
+}
+.food {
+  display: flex;
+  gap: 30px; 
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin-top: 300px;
+  margin-left: -350px;
+}
+
+.price-circle3 {
+  background-color: #ffffff;
+  width: 265px;
+  height: 309px;
+  border-radius: 50px 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateY(70px); 
+  transition: all 0.7s ease-out;
+}
+
+.price-circle3.visible {
+  opacity: 1; 
+  transform: translateY(0);
+}
+
+.price-circle3 img {
+  width: 207px;
+  height: 207px;
+  position: absolute;
+  bottom: 220px;
+  right: 30px;
+}
+
+.price span {
+  border-radius: 50%;
+  background-color: #101a24;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  font-size: 14px;
+  position: absolute;
+  left: 70%;
+  bottom: 340px;
+}
+.Lumpia h3 {
+  margin: 10px 0;
+  font-size: 25px;
+  color: #101a24;
+  font-weight: bold;
+  margin-top: 110px;
+  line-height: 70px;
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+
+.Describe-it {
+  width: 225px;
+  height: 70px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #5c6574;
+  line-height: 26px;
+}
+
+.vegetable {
+  position: absolute;
+  top: 750px;
+}
+.onion-slice {
+  position: absolute;
+  bottom: 150px;
+  left: 150%;
+}
+.Herbs {
+  position: absolute;
+  bottom: 40px;
+  left: 180%;
+}
+.garlic {
+  position: absolute;
+  bottom: 40px;
+  left: 700%;
+}
+.dish-2 {
+  position: absolute;
+  top: 900px;
+  right: 150px;
+}
+.dish-2 img {
+  width: 450px;
+  height: 450px;
+}
+.leaf-1 {
+  position: absolute;
+  top: 990px;
+  right: 520px;
+}
+.leaf-1 img {
+  width: 91px;
+  height: 189px;
+}
+.leaf-3 {
+  position: absolute;
+  top: 950px;
+  right: 20px;
+}
+.leaf-3 img {
+  width: 194px;
+  height: 129px;
+}
+.leaf-2 {
+  position: absolute;
+  top: 1250px;
+  right: 400px;
+}
+.leaf-2 img {
+  width: 209px;
+  height: 133px;
+}
+.leaf-4 {
+  position: absolute;
+  top: 1250px;
+  right: 270px;
+}
+.leaf-4 img {
+  width: 96px;
+  height: 150px;
+}
+.The-paper {
+  position: absolute;
+  left: 80%;
+  top: 950px;
+}
+.The-paper img {
+  width: 224.2px;
+  height: 212.7px;
+}
+.The-leaf-is-branched {
+  position: absolute;
+  left: 110%;
+  top: 1400px;
+}
+.The-leaf-is-branched img {
+  width: 451.44px;
+  height: 320.78px;
+}
+.restaurant {
+  position: absolute;
+  top: 1100px;
+  left: 280px;
+  width: 520px;
+  height: 130px;
+}
+.restaurant h2 {
+  font-family: var(--main-font);
+  font-size: 50px;
+  color: var(--color);
+  font-weight: bold;
+  line-height: 65px;
+}
+.description {
+  position: absolute;
+  top: 1250px;
+  left: 280px;
+  width: 376px;
+  height: 115px;
+  line-height: 29px;
+}
+.description p {
+  color: var(--ashen);
+  font-family: var(--main-font);
+}
+.menu2 {
+  position: relative;
+  top: 740px;
+  left: 280px;
+  width: 120px;
+  height: 57px;
+  padding: 20px;
+  background-color: var(--color);
+  color: #fff;
+  border-radius: 22px 10px;
+  border: solid 1px #101a24;
+  font-size: 18px;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.Book-a-table2 {
+  position: relative;
+  top: 740px;
+  left: 300px;
+  width: 167px;
+  height: 54px;
+  padding: 20px;
+  background-color: var(--orange);
+  color: #fff;
+  border-radius: 22px 10px;
+  border: solid 1px #ea6d27;
+  font-size: 18px;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.Hawiah {
+  position: absolute;
+  top: 3300px;
+}
+.Our-Expects-Chef img {
+  width: 290px;
+  height: 303.43px;
+  margin-left: 25%;
+}
+.Expects-Chef h2 {
+  width: 520px;
+  margin-left: 45%;
+  position: absolute;
+  bottom: 550px;
+  font-size: 40px;
+  font-size: bold;
+  color: var(--color);
+}
+.Chef-Description {
+  width: 376px;
+  height: 115px;
+  color: var(--ashen);
+  line-height: 29px;
+  font-family: var(--main-font);
+  position: absolute;
+  left: 300px;
+  bottom: 420px;
+}
+
+.chef {
+  position: absolute;
+  left: 700px;
+  bottom: 5px;
+  top: 0;
+  transform: translateY(100%); 
+  transition: transform 0.8s ease-in-out; 
+}
+
+.chef img {
+  width: 507px;
+  height: 695px;
+  transition: transform 0.5s ease-in-out; 
+}
+
+
+.chef.show {
+  transform: translateY(0);
+}
+
+
+.chef img:hover {
+  transform: scale(1.05) rotate(5deg); 
+}
+
+.Chef-Information-Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; 
+  justify-items: center; 
+  align-items: center; 
+  margin: 20px auto;
+  margin-left: 40px;
+  
+  cursor: pointer;
+}
+
+
+.Chef-Information img {
+  width: 300px; 
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.Chef-Information img:hover {
+  transform: scale(1.1);
+}
+.menu22 {
+  position: relative;
+  top: 40px;
+  left: 280px;
+  width: 120px;
+  height: 57px;
+  padding: 20px;
+  background-color: var(--color);
+  color: #fff;
+  border-radius: 22px 10px;
+  border: solid 1px #101a24;
+  font-size: 18px;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.Book-a-table22 {
+  position: relative;
+  top: 40px;
+  left: 300px;
+  width: 167px;
+  height: 54px;
+  padding: 20px;
+  background-color: var(--orange);
+  color: #fff;
+  border-radius: 22px 10px;
+  border: solid 1px #ea6d27;
+  font-size: 18px;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.Our-Happy-Customers {
+  position: absolute;
+  top: 4200px;
+  background-color: #F3F4F4;
+  width: 100%;
+  height: 1200px;
+}
+.pizza img {
+  position:absolute ;
+  top: 50px;
+  
+}
+.customers {
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 40px;
+  color: var(--color);
+  font-weight: bold;
+  margin-top: 100px;
+}
+.About-Us-Our-Clients {
+  width: 376px;
+  height: 56px;
+  line-height: 29px;
+  color: var(--ashen);
+  margin-left: 480px;
+  margin-top: 40px;
+}
+.person1 {
+  background-color: #FFFFFF;
+  width: 40%;
+  height: 500px;
+  text-align: center;
+  border-radius: 100px 50px;
+  margin-left: 450px;
+  border: solid 1px#FFFFFF;
+  margin-top: 50px;
+}
+.person2 {
+  background-color: #FFFFFF;
+  width: 40%;
+  height: 500px;
+  text-align: center;
+  border-radius: 100px 50px;
+}
+.person1 img {
+  border-radius: 50%;
+}
+.person2 img {
+  border-radius: 50%;
+}
+.Description-of-the-first-person {
+  color: var(--ashen);
+  font-family: var(--main-font);
+  margin-top: 100px;
+  width: 383px;
+  height: 155px;
+  margin-left: 13%;
+  line-height: 29px;
+}
+.person1 h3 {
+  font-family: var(--main-font);
+  color: var(--color);
+  font-weight: bold;
+}
+.person2 h3 {
+  font-family: var(--main-font);
+  color: var(--color);
+  font-weight: bold;
+}
+span {
+  color: var(--ashen);
+  margin-top: 15px;
+}
+.Box {
+  position: absolute;
+  top: 5200px;
+}
+.Box img {
+  width: 1151px;
+  height: 407px;
+  margin-left: 100px;
+}
+.Box h2 {
+  position: absolute;
+  bottom: 220px;
+  left: 30%;
+  color: #FFFFFF;
+  width: 790px;
+  height: 116px;
+  line-height: 58px;
+  font-weight: bold;
+  font-family: var(--main-font);
+  font-size: 60px;
+}
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+}
+
+.email-container label {
+  font-size: 16px;
+  color: #333;
+}
+
+.email-container input {
+  width: 700px;
+  padding: 25px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.email-container input:focus {
+  border-color: #fff;
+}
+
+.email-container button {
+  padding: 10px 20px;
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  position: absolute;
+  left: 83%;
+}
+
+.email-container button:hover {
+  background-color: var(--orange);
+}
+.footer {
+  position: absolute;
+  top: 5700px;
+  left: 10%;
+}
+.footer p {
+  width: 50%;
+  color: var(--ashen);
+  font-family: var(--main-font);
+  margin-top: 20px;
+}
+.footer h3 {
+  color: var(--color);
+  font-family: var(--main-font);
+  margin-top: 20px;
+  font-weight: bold;
+}
+table {
+  margin-top: 30px;
+
+}
+span {
+  color: var(--color);
+  font-family: var(--main-font);
+  font-size: 20px;
+}
+.Navigation {
+  list-style-type: none;
+  text-align: center;
+  left: 70%;
+  position: absolute;
+  bottom: 20px;
+  line-height: 40px;
+
+}
+.DISHES {
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  left: 70%;
+  position: absolute;
+  bottom: 20px;
+  line-height: 40px;
+  list-style-type: none;  
+}
+  ul  {
+  color: var(--ashen);
+}
+.FOLLOW-US h3 {
+  position: absolute;
+  bottom: 110px;
+  font-family: var(--main-font);
+  color: var(--color);
+}
+.FOLLOW-US {
+  display: flex;
+  gap: 25px; 
+  position: absolute;
+  top: 150px;
+  left: 170%;
+}
+
+.FOLLOW-US a {
+  text-decoration: none;
+  font-size: 2rem; 
+  color: #000000; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.FOLLOW-US a:hover {
+  color: #00acee; 
+  transform: scale(1.2); 
+}
+
+.FOLLOW-US a:nth-child(2):hover {
+  color: #4267b2; 
+}
+
+.FOLLOW-US a:nth-child(1):hover {
+  color: #d30a0a; 
+}
+
+.FOLLOW-US a:nth-child(3):hover {
+  color: #1da1f2; 
+}
+.All-Right {
+  padding: 40px;
+}
